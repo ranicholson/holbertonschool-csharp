@@ -11,6 +11,11 @@ class Dictionary
             if (kvp.Value > max.Value)
                 max = kvp;
         }
+
+        if (max.Value == 0)
+        {
+            return ("None");
+        }
         return max.Key;
     }
 }
