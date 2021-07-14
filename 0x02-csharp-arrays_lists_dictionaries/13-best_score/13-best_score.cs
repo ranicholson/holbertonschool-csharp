@@ -8,7 +8,7 @@ class Dictionary
         KeyValuePair<string, int> max = new KeyValuePair<string, int>("test", 0);
         foreach (var kvp in myList)
         {
-            if (kvp.Value > max.Value)
+            if (kvp.Value >= max.Value)
                 max = kvp;
         }
 
