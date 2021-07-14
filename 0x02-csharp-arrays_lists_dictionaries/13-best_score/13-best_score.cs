@@ -12,7 +12,7 @@ class Dictionary
                 max = kvp;
         }
 
-        if (max.Value == 0 && myList.ContainsKey(max.Key))
+        if (max.Value == 0 && !myList.ContainsKey(max.Key))
         {
             return ("None");
         }
