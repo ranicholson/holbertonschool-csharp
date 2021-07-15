@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 
-    class LList
+class LList
+{
+    public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
-        public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
+        LinkedListNode<int> newNode = new LinkedListNode<int>(n);
+        LinkedListNode<int> currentNode = myLList.First;
+        while (currentNode != null)
         {
-            LinkedListNode<int> newNode = new LinkedListNode<int>(n);
-            LinkedListNode<int> currentNode = myLList.First;
-            while (currentNode != null)
+            if (currentNode.Value > newNode.Value)
             {
-                if (currentNode.Value > newNode.Value)
-                {
-                    myLList.AddBefore(currentNode, newNode);
-                    break;
-                }
-                currentNode = currentNode.Next;
+                myLList.AddBefore(currentNode, newNode);
+                break;
             }
-            return(newNode);
-            
+            if (currentNode.Next == null)
+            {
+                myLList.AddAfter(currentNode, newNode);
+                break;
+            }
+            currentNode = currentNode.Next;
         }
+        return (newNode);
+
     }
+}
