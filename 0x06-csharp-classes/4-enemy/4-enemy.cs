@@ -17,7 +17,7 @@ namespace Enemies
         ///<summary>Initializes new instance of Zombie class.</summary>
         public Zombie()
         {
-            this.health = 0;
+            health = 0;
         }
 
         ///<summary>Initializes new instance of class Zombie with value to be assigned to health</summary>
@@ -28,13 +28,13 @@ namespace Enemies
             {
                 throw new ArgumentException("Health must be greater than or equal to 0");
             }
-            this.health = value;
+            health = value;
         }
 
         ///<summary>Returns the value of health</summary>
         public int GetHealth()
         {
-            return (this.health);
+            return (health);
         }
 
     }
