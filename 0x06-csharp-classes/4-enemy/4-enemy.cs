@@ -9,7 +9,7 @@ namespace Enemies
         private int health;
 
         ///<summary>Name field that has string value and defaults to (No Name)</summary>
-        private string name = "(No Name)";
+        private string name = "(No name)";
 
         /// <summary>Gets or sets the name</summary>
         public string Name { get {return (name);} set {name=value;} }
@@ -17,7 +17,7 @@ namespace Enemies
         ///<summary>Initializes new instance of Zombie class.</summary>
         public Zombie()
         {
-            health = 0;
+            this.health = 0;
         }
 
         ///<summary>Initializes new instance of class Zombie with value to be assigned to health</summary>
@@ -28,13 +28,13 @@ namespace Enemies
             {
                 throw new ArgumentException("Health must be greater than or equal to 0");
             }
-            health = value;
+            this.health = value;
         }
 
         ///<summary>Returns the value of health</summary>
         public int GetHealth()
         {
-            return (health);
+            return (this.health);
         }
 
     }
