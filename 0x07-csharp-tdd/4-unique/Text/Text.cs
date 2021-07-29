@@ -9,6 +9,9 @@ namespace Text
         ///<summary>Returns the first non-repeating character of a string</summary>
         public static int UniqueChar(string s)
         {
+            if (s == "")
+                return (-1);
+
             char amIUnique = s[0];
             int indexCount = 0;
 

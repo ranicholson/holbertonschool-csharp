@@ -38,5 +38,13 @@ namespace Text.Tests
             int indexResult = Str.UniqueChar(s);
             Assert.AreEqual(6, indexResult);
         }
+
+        [Test]
+        public void emptyString()
+        {
+            string s = "";
+            int indexResult = Str.UniqueChar(s);
+            Assert.AreEqual(-1, indexResult);
+        }
     }
 }
