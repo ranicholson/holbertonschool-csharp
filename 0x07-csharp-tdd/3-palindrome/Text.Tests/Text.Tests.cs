@@ -52,5 +52,13 @@ namespace Text.Tests
             bool palindromeTest = Str.IsPalindrome(s);
             Assert.AreEqual(false, palindromeTest);
         }
+
+        [Test]
+        public void caseTest()
+        {
+            string s = "taTtaRraTtAt";
+            bool palindromeTest = Str.IsPalindrome(s);
+            Assert.AreEqual(true, palindromeTest);
+        }
     }
 }
