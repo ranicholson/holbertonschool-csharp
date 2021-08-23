@@ -4,7 +4,7 @@
 ///<summary>Vector math class</summary>
 class VectorMath
 {
-    ///<summary>Method that adds then returns sum of two vectors
+    ///<summary>Method that adds then returns sum of two vectors</summary>
     public static double[] Add(double[] vector1, double[] vector2)
     {
         if (vector1.Length == 2 && vector2.Length == 2)
