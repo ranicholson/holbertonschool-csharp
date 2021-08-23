@@ -4,7 +4,7 @@
 /// <summary>Vector math class</summary>
 class VectorMath
 {
-    ///<summary>Calculates dot product of vectors
+    ///<summary>Calculates dot product of vectors</summary>
     public static double DotProduct(double[] vector1, double[] vector2)
     {
         if (vector1.Length == 2 && vector2.Length == 2)
