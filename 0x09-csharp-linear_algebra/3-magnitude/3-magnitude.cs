@@ -4,7 +4,7 @@
 /// <summary>Class filled with math fun</summary>
     class VectorMath
     {
-        /// <summary>Calculates length of a given vector
+        /// <summary>Calculates length of a given vector</summary>
         public static double Magnitude(double[] vector)
         {
             if (vector.Length == 2)
