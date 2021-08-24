@@ -9,7 +9,7 @@ class MatrixMath
     {
         double[,] prodMatrix;
 
-        if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3)
+        if (matrix.GetLength(0) < 2 || matrix.GetLength(1) > 3)
             return (new double [,] {{-1}});
 
         if (matrix.GetLength(0) == 2)
