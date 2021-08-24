@@ -19,6 +19,6 @@ class MatrixMath
                     prodMatrix[x, y] += matrix1[x, z] * matrix2[z, y];
             }
         }
-        return (sumMatrix);
+        return (prodMatrix);
     }
 }
