@@ -9,7 +9,7 @@ class MatrixMath
     {
         double[,] sumMatrix;
 
-        if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.Length != matrix2.Length)
+        if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.Length != matrix2.Length || matrix1.Length < 2)
             return (new double [,] {{-1}});
 
         if (matrix1.GetLength(0) == 2)
