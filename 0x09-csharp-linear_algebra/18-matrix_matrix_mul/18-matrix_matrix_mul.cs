@@ -1,8 +1,10 @@
 ﻿using System;
 
 
+/// <summary>Class containing matrix math</summary>
 class MatrixMath
 {
+    /// <summary>Multiplies matrices and returns new matrix with result</summary>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
     {
         double[,] prodMatrix;
