@@ -10,7 +10,7 @@ class MatrixMath
         double[,] newMatrix = new double[2, 2];
         double[,] rotationForm = {{Math.Cos(angle), Math.Sin(angle)}, {-1 * Math.Sin(angle), Math.Cos(angle)}};
 
-        if (matrix.GetLength(0) != 2)
+        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
             return (new double [,] {{-1}});
 
         for (int x = 0; x < 2; x ++)
