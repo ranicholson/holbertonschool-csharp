@@ -18,7 +18,7 @@ class MatrixMath
             for (int y= 0; y < 2; y++)
             {
                 for (int z = 0; z < 2; z++)
-                    newMatrix[x, y] += Math.Round(matrix[x, z] * rotationForm[z, y], 2);
+                    newMatrix[x, y] = Math.Round(newMatrix[x, y]) + Math.Round(matrix[x, z] * rotationForm[z, y], 2);
             }
         }
 
