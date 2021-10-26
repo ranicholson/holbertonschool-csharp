@@ -4,7 +4,7 @@
 
 abstract class Base
 {
-    public string name = "";
+    public string name { get; set; }
 
     ///<summary>Override of ToString() that returns name and type</summary>
     public override string ToString()
