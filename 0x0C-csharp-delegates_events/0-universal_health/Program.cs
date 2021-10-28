@@ -15,14 +15,16 @@ class Player
         if (maxHp <= 0f)
         {
             this.maxHp = 100f;
+            this.hp = 100f;
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
-
         else
+        {
             this.maxHp = maxHp;
+            this.hp = maxHp;
+        }
 
         this.name = name;
-        this.hp = maxHp;
     }
 
     ///<summary>Prints hp infdormation</summary>
