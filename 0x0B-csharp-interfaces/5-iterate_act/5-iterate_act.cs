@@ -121,10 +121,10 @@ class RoomObjects
                 ((IInteractive)item).Interact();
 
             if (type == typeof(IBreakable) && item is ICollectable)
-                ((IBreakable)item).Break();
-
-            if (type == typeof(ICollectable) && item is IBreakable)
                 ((ICollectable)item).Collect();
+
+            if (type == typeof(ICollectable) && item is IBreakable)        
+                ((IBreakable)item).Break();
         }
     }
 }
