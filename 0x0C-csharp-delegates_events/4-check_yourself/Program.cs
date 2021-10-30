@@ -42,16 +42,16 @@ class Player
     ///<summary>CheckStatus method to change status based off of currentHp</summary>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        if (e.currentHP == this.maxHp)
+        if (e.currentHp == this.maxHp)
             this.status = $"{this.name} is in perfect health!";
 
-        else if (e.currentHP >= (this.maxHp / 2f))
+        else if (e.currentHp >= (this.maxHp / 2f))
             this.status = $"{this.name} is doing well!";
 
-        else if (e.currentHP >= (this.maxHp / 4f))
+        else if (e.currentHp >= (this.maxHp / 4f))
             this.status = $"{this.name} isn't doing too great...";
 
-        else if (e.currentHP > 0)
+        else if (e.currentHp > 0)
             this.status = $"{this.name} needs help!";
 
         else
@@ -137,11 +137,11 @@ public delegate float CalculateModifier(float baseValue, Modifier modifier);
 ///<summary>Class for CurrentHPArgs</summary>
 class CurrentHPArgs : EventArgs
 {
-    public readonly float currentHP;
+    public readonly float currentHp;
 
     ///<summary>Constructor for CurrentHPArgs class</summary>
     public CurrentHPArgs(float newHp)
     {
-        this.currentHP = newHp;
+        this.currentHp = newHp;
     }
 }
