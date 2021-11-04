@@ -3,9 +3,9 @@
 ///<summary>BaseClass that other classes will inherit from</summary>
 class BaseClass
 {
-    public string id;
-    public DateTime date_created;
-    public DateTime date_updated;
+    public string id { get; set; }
+    public DateTime date_created { get; set; }
+    public DateTime date_updated { get; set; }
 
     ///<summary>Constructor for BaseClass</summary>
     public BaseClass()
