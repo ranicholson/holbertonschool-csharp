@@ -1,5 +1,7 @@
 using NUnit.Framework;
+using System;
 
+///<summary>Basic test file</summary>
 namespace InventoryManagement.Tests
 {
     public class Tests
@@ -10,10 +12,9 @@ namespace InventoryManagement.Tests
         }
 
         [Test]
-        public void BaseClass_Instance()
+        public void baseClassInstance()
         {
-            BaseClass baseTestClass = new BaseClass();
-            Assert.AreEqual(baseTestClass.date_created, baseTestClass.date_updated);
+            Assert.AreEqual(0, 0);
         }
     }
 }
