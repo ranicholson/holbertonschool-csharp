@@ -10,9 +10,10 @@ namespace InventoryManagement.Tests
         }
 
         [Test]
-        public void Test1()
+        public void BaseClass_Instance()
         {
-            Assert.Pass();
+            BaseClass baseTestClass = new BaseClass();
+            Assert.AreEqual(baseTestClass.date_created, baseTestClass.date_updated);
         }
     }
 }
